@@ -1,0 +1,65 @@
+<!DOCTYPE html >
+<html>
+    <head>
+        <title>Tip calculator </title>
+    </head>
+    <style>
+        body {
+ 
+ background-size:80% ;
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+  background-position: center;
+}
+        .sty{
+            width: 520px;
+            height: 520PX;
+            background-color:rgba(245, 245, 220, 0.721);
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border: 1px solid black;
+        }
+        .btn{
+        display: block;
+        width: 100px;
+        padding: 10px;
+        border: none;color: black;text-align: center;
+        text-decoration: none;
+        cursor: pointer;border-radius: 3px;
+        display: block;
+        margin: auto;
+        margin-top: 30px;
+        background-color:goldenrod ;
+    }
+    #resultsX ,#resultsY ,#resultsZ, #resultsP {
+        margin-bottom: 10px;
+      margin-left: 20px;
+            font-size: 22px; 
+    }
+    
+    </style>
+    <body>
+        <div class="sty"> 
+        <h1 style="text-align: center; font-size: 45px;"> Tip Calculator</h1>
+        <label for style="font-size: 25px;margin-left: 20px;">Bill:</label>
+        <input type="number" name="bill" id="bill"><br>
+        <bill id="bill"></bill><br>
+
+        <label for style="font-size: 25px; margin-left: 20px;">Tip(%): </label>
+        <input type="number" name="tip" id="tip"><br>
+        <tip id="tip"></tip><br>
+        <label for style="font-size: 25px; margin-left: 20px;">Number of people: </label>
+        <input type="number" name="persons" id="persons"><br>
+        <persons id="persons"></persons><br>
+            <button  class="btn" onclick="calculator()" style="font-size: 20px;">Calculate</button>
+            <p id="resultsX"></p>
+            <p id="resultsY"></p>
+            <p id="resultsZ"></p>
+            <p id="resultsP"></p>
+           </div>
+    </div>
+    </body>
+    <script src="tipjs.js"></script> 
+</html>
